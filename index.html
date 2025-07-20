@@ -1851,6 +1851,25 @@ var timer,ready=e=>{"loading"!=document.readyState?e():document.addEventListener
   #content {
     display: none;
   }
+/* FIX for char-wrapped button text like (Contact) and (About) */
+.word {
+  white-space: nowrap;
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.char {
+  display: inline-block;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header .text-link {
+    font-size: 0.85rem;
+    letter-spacing: -0.3px;
+    padding-right: 2px;
+  }
+}
 </style>
 </head>
 
